@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 1;
+    font-size: 16px;
+    background: lightslategrey;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*Demo css style*/
+
+.container {
+    padding: 50px 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 1px solid #262626;
+    margin: 10px 5px;
+    border-radius: 5px;
+    color: #262626 !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(38,38,38,.5);
+    transition: .3s ease-out;
+}
+
+.btn:active {
+    transform: scale(.95);
+}
+.btn:hover {
+    transition: .3s ease-out;
+    box-shadow: 0 0 0 rgba(38,38,38,0);
+}
+
+.modal_mainWr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(38,38,38,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0;
+    transition: .3s ease-in;
+    transform: scale(0);
+}
+
+.modal_mainWr.active {
+    opacity: 1;
+    z-index: 999;
+    transform: scale(1);
+}
+
+.modal_content {
+    max-width: 500px;
+    width: 100%;
+    max-height: 80vh;
+    margin: 0 45px;
+    position: relative;
+}
+
+.modal_item {
+    height: 100%;
+    background: #d1d1d1;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal_item-header {
+    position: relative;
+}
+
+.modal_item-header h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #262626;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    display: flex;
+    justify-content: space-between;
+}
+
+.closeMode {
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    width: 30px;
+    height: 30px;
+    background: initial;
+    transition: .3s ease;
+}
+
+.closeMode span {
+    position: absolute;
+    top: calc( 50% - 3px);
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: #dcdcdc;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(245,69,0,.5);
+    transition: .3s ease;
+}
+
+.closeMode:hover {
+    transform: rotate(90deg);
+}
+
+.closeMode:hover span {
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    transition: .3s ease;
+}
+.closeMode span:first-child {
+    transform: rotate(45deg);
+}
+
+.closeMode span:last-child {
+    transform: rotate(-45deg);
+}
+
+
+.modal_item-body {
+    padding: 20px;
+    overflow-y: auto;
+    height: auto;
+
+}
+
+.modal_item-footer {
+    padding: 10px;
+}
+
+/*Quiz CSS*/
+
+.progress_bar {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #c1c1c1;
+}
+
+.progress {
+    height: 100%;
+    background: red;
+    width: 0;
+    transition: .3s ease-in-out;
+}
+
+.quiz_blockControl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_item-body {
+    position: relative;
+}
+
+.quiz_block {
+    display:none;
+}
+
+.quiz_block.active {
+    display: block;
+}
+
+.quiz_block p {
+    margin-bottom: 10px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.input_frm {
+    width: 100%;
+    height: 50px;
+    text-indent: 20px;
+    color: #1c1c1c;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.input_frm::placeholder {
+    color: #1c1c1c;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.form_btn {
+    margin: 20px 0 0 0;
+    float: right;
+}

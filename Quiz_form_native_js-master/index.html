@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz form</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+<div class="container">
+    <a href="#" class="btn" data-trigger-modal="btn_modal" data-label-modal="modal1">1 Раунд – Факты</a>
+
+    <div class="modal_mainWr" id="modal1" data-modal="modal">
+        <div class="modal_content" data-important="true">
+            <button type="button" class="closeMode" data-close="modal">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="modal_item">
+                <form action="" method="post" class="quiz_form">
+                    <div class="modal_item-header">
+                        <h2>title<span class="contQ">
+                                <span class="currentQ">1</span>/<span class="allQ">0</span>
+                            </span>
+                        </h2>
+
+                        <div class="progress_bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="modal_item-body">
+
+                        <div class="quiz_blockWr">
+                            <div class="quiz_block active">
+                                <img src="mouse.jpg" wight="385" height="245" alt="мышь крадется" title="пп">
+                                <label for="data1">
+                                    <p>Введите данные первое поле</p>
+                                    <input type="text" placeholder="Введите данные1" id="data1" class="input_frm">
+                                </label>
+                            </div>
+
+                            <div class="quiz_block">
+                                <label for="data2">
+                                    <audio controls >
+                                        <source src="Game .OST — Sonic (SMD) - green-hill-zone.mp3"> 
+                                    </audio>
+                                    <p>Введите данные второе поле</p>
+                                    <input type="text" placeholder="Введите данные2" id="data2" class="input_frm">
+                                </label>
+                            </div>
+                            <div class="quiz_block">
+                                <label for="data3">
+                                    <p>Введите данные третье поле</p>
+                                    <input type="text" placeholder="Введите данные3" id="data3" class="input_frm">
+                                </label>
+                            </div>
+                            <div class="quiz_block">
+                                <label for="data4">
+                                    <p>Введите данные четвертое поле</p>
+                                    <input type="text" placeholder="Введите данные4" id="data4" class="input_frm">
+                                    <button type="submit" class="btn form_btn" id="form_btn">Отправить</button>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal_item-footer">
+                        <div class="quiz_blockControl">
+                            <button type="button" class="btn btnPrev">Prev</button>
+                            <button type="button" class="btn btnNext">Next</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <a href="#" class="btn" data-trigger-modal="btn_modal" data-label-modal="modal1">modal 2</a>
+
+    <div class="modal_mainWr" id="modal2" data-modal="modal">
+        <div class="modal_content" data-important="true">
+            <button type="button" class="closeMode" data-close="modal">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="modal_item">
+                <form action="" method="post" class="quiz_form">
+                    <div class="modal_item-header">
+                        <h2>title<span class="contQ">
+                                <span class="currentQ">1</span>/<span class="allQ">0</span>
+                            </span>
+                        </h2>
+
+                        <div class="progress_bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="modal_item-body">
+
+                        <div class="quiz_blockWr">
+                            <div class="quiz_block active">
+                                <label for="data1">
+                                    <p>Введите данные первое поле</p>
+                                    <input type="text" placeholder="Введите данные1" id="data1" class="input_frm">
+                                </label>
+                            </div>
+                            <div class="quiz_block">
+                                <label for="data2">
+                                    <p>Введите данные второе поле</p>
+                                    <input type="text" placeholder="Введите данные2" id="data2" class="input_frm">
+                                </label>
+                            </div>
+                            <div class="quiz_block">
+                                <label for="data3">
+                                    <p>Введите данные третье поле</p>
+                                    <input type="text" placeholder="Введите данные3" id="data3" class="input_frm">
+                                </label>
+                            </div>
+                            <div class="quiz_block">
+                                <label for="data4">
+                                    <p>Введите данные четвертое поле</p>
+                                    <input type="text" placeholder="Введите данные4" id="data4" class="input_frm">
+                                    <button type="submit" class="btn form_btn" id="form_btn">Отправить</button>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal_item-footer">
+                        <div class="quiz_blockControl">
+                            <button type="button" class="btn btnPrev">Prev</button>
+                            <button type="button" class="btn btnNext">Next</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--кастомный скрипт файл-->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
