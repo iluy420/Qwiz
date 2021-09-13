@@ -28,16 +28,16 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            gg h = new gg(1);
+            
 
-            if (h.count < 2)
+            if (gg.coun < 2)
             {
-                opoi3.Text = "у тебя параша черт";
+                opoi3.Text = "у тебя 2";
 
             }
             else
             {
-                opoi3.Text = "5 иди на хуй";
+                opoi3.Text = "5 ";
             }
           
         }

@@ -18,19 +18,9 @@ namespace WpfApp1
     /// <summary>
     /// Логика взаимодействия для Page1.xaml
     /// </summary>
-    public class gg
+    public class gg//счетчик
     {
-        public static int coun { get; set; } = 0;
-        public int count  { get; set; } = coun;
-        public gg()
-        {
-            coun++;
-        }
-        public gg(int a)
-        {
-            
-        }
-
+        public static int coun { get; set; } = 0;// переменная счетчика
     }
     public partial class Page1 : Page
     {
@@ -43,7 +33,7 @@ namespace WpfApp1
         {
             if(opoi.IsChecked == true)
             {
-                gg h = new gg();
+                gg.coun++; // обращение к статическому полю класса gg(счетчик) +1 
             }
             NavigationService.Navigate(new Page2());
         }

@@ -29,7 +29,7 @@ namespace WpfApp1
         {
             if (opoi2.IsChecked == true)
             {
-                gg h = new gg();
+                gg.coun++;
             }
             NavigationService.Navigate(new Page3());
         }
